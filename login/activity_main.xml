@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connecting Hub"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/email"
+        android:hint="email"
+        />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pass"
+    android:hint="password"
+    android:drawableStart="@drawable/password"
+    android:drawablePadding="10dp"
+    android:inputType="textPassword"
+    android:textColorHint="@color/colorPrimaryDark"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="220dp"
+    android:drawableLeft="@drawable/password"
+    tools:ignore="RtlCompat" />
+    <com.google.android.gms.ads.AdView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner1"
+        android:layout_alignParentBottom="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8941651024096142/1598866757"
+        ></com.google.android.gms.ads.AdView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="10dp"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pb"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textAlignment="center"
+        android:layout_marginTop="330dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:layout_marginTop="350dp"/>
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="370dp"
+        android:text="Facebook"
+        android:textSize="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="google"
+        android:textSize="10dp"
+        android:id="@+id/google"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="190dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Don't have an account?"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+android:layout_alignParentBottom="true"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Register"
+        android:textSize="10dp"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
